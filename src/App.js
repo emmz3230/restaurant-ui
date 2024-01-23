@@ -30,7 +30,3 @@ const App = () => (
 );
 
 export default App;
-
-// 0720675014
-// adebayo afeez
-// access bank

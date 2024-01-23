@@ -3,12 +3,10 @@ import React from "react";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 
-// 09069622644
-
 const FindUs = () => (
   <div className="app__bg app__wrapper section__padding" id="contact">
     <div className="app__wrapper_info">
-      <SubHeading title="contact" />
+      <SubHeading title="Contact" />
       <h1
         className="headtext__cormorant"
         style={{ marginBottom: "3rem" }}
@@ -36,8 +34,9 @@ const FindUs = () => (
         Visit Us
       </button>
     </div>
+
     <div className="app__wrapper_img">
-      <img src={images.findus} alt="findus_img" />
+      <img src={images.findus} alt="finus_img" />
     </div>
   </div>
 );

@@ -5,10 +5,10 @@ import { images, data } from "../../constants";
 import "./Laurels.css";
 
 const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
-  <div className="app__lauresl_award-card">
-    <img src="imgUrl" alt="awards" />
-    <div className="app__laurels_award-card_content">
-      <p className="p_cormorant" style={{ color: "#DCCA87" }}>
+  <div className="app__laurels_awards-card">
+    <img src={imgUrl} alt="awards" />
+    <div className="app__laurels_awards-card_content">
+      <p className="p__cormorant" style={{ color: "#DCCA87" }}>
         {title}
       </p>
       <p className="p__opensans">{subtitle}</p>
@@ -19,9 +19,8 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
 const Laurels = () => (
   <div className="app__bg app__wrapper section__padding" id="awards">
     <div className="app__wrapper_info">
-      <SubHeading title="awards & regnition" />
-
-      <h1 className="headtext__cormorant">Outr Laurels</h1>
+      <SubHeading title="Awards & recognition" />
+      <h1 className="headtext__cormorant">Our Laurels</h1>
 
       <div className="app__laurels_awards">
         {data.awards.map((award) => (
@@ -30,7 +29,7 @@ const Laurels = () => (
       </div>
     </div>
 
-    <div className="app_wrapper_img">
+    <div className="app__wrapper_img">
       <img src={images.laurels} alt="laurels_img" />
     </div>
   </div>
